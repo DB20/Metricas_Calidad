@@ -19,6 +19,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 db.create_all()
 
+
 api = Api(app)
 api.init_app(app)
 
