@@ -36,9 +36,12 @@ jobs:
         run: npm run build
 
       - name: Run Tests and Generate Coverage
+        run: npm run test:cov
+       - name: fix code coverage paths
+        working-directory: ./coverage
         run: |
-            npm run test:cov
             sed -i 's/\/home\/runner\/work\/Metricas_Calidad\/Metricas_Calidad\//\/github\/workspace\//g' ./src/coverage/lcov.info
+            sed -i 's/\/home\/runner\/work\/Metricas_Calidad\/Metricas_Calidad\//\/github\/workspace\//g' sonar-cloud-reporter.xml
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
