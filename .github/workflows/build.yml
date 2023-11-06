@@ -31,4 +31,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Necesario para obtener información de PR, si la hay
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_SCANNER_OPTS: -Dsonar.sources=. -Dsonar.exclusions=**/node_modules/**,**/dist/**  # Exclusiones personalizadas si es necesario
-          SONAR_RUNNER_PARAMS: "sonar.c.file.suffixes=-,sonar.cpp.file.suffixes=-,sonar.objc.file.suffixes=-"
+          SONAR_OTHER_PROPS: "sonar.inclusions=** -x **/*.c, **/*.cpp, **/*.h, **/*.m, **/*.mm"
