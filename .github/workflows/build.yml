@@ -38,7 +38,6 @@ jobs:
       - name: Run Tests and Generate Coverage
         run: |
             npm run test:cov
-            npm test -- --coverage --testResultsProcessor=jest-sonar-reporter
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
