@@ -38,6 +38,7 @@ jobs:
       - name: Run Tests and Generate Coverage
         run: |
             npm run test:cov
+            sed -i 's/\/home\/runner\/work\/Metricas_Calidad\/Metricas_Calidad\//\/github\/workspace\//g' ./src/coverage/lcov.info
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
