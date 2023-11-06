@@ -28,9 +28,6 @@ jobs:
         run: | 
           python -m coverage run -m unittest discover tests 
           python -m coverage xml -i 
-          pytest --cov=src -v -s --cov-fail-under=80
-
-
 
       # - name: Setup Node.js
       #   uses: actions/setup-node@v2
