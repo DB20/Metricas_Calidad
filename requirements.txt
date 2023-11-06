@@ -1,21 +1,20 @@
-# =============================================================================
-# DEPRECATION WARNING:
-#
-# The file `requirements.txt` does not influence the package dependencies and
-# will not be automatically created in the next version of PyScaffold (v4.x).
-#
-# Please have look at the docs for better alternatives
-# (`Dependency Management` section).
-# =============================================================================
-#
-# Add your pinned requirements so that they can be easily installed with:
-# pip install -r requirements.txt
-# Remember to also add them in setup.cfg but unpinned.
-# Example:
-# numpy==1.13.3
-# scipy==1.0
-#
-pytest
+Flask==2.2.2
+#Flask_JWT_Extended==4.4.4
+#Flask_RESTful==0.3.9
+#Flask_SQLAlchemy==2.5.1
+#marshmallow==3.17.0
+#marshmallow_sqlalchemy==0.28.1
+#SQLAlchemy==1.4.40
+Werkzeug==2.2.2
+#flaskr==1.0.0
+Flask-RESTful
+Flask-jwt-extended
+flask_sqlalchemy
+marshmallow-sqlalchemy
+google-api-core
+google-cloud-storage
+google-cloud-pubsub
+psycopg2-binary
+gunicorn
 pytest-cov
-
-
+pytest
