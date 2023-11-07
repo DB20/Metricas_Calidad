@@ -16,5 +16,6 @@
 # scipy==1.0
 #
 SQLAlchemy==1.3.20
+sqlalchemy
 PyQt5==5.15.2
 coverage==5.3
